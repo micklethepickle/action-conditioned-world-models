@@ -122,13 +122,6 @@ def main(argv):
                                                 "transformer_nlayers" : 2,
                                                 "transformer_nheads": 3,
                                                 "transformer_pdrop": 0.1}
-            # config_rl.sequence_model_params = {'name': config_rl.sequence_model_name,
-            #                                     "transformer_nlayers" : config_rl.transformer_nlayers,
-            #                                     "transformer_nheads": config_rl.transformer_nheads,
-            #                                     "transformer_pdrop": config_rl.transformer_pdrop}
-            # config_rl = remove_key(config_rl, 'transformer_nlayers')
-            # config_rl = remove_key(config_rl, 'transformer_nheads')
-            # config_rl = remove_key(config_rl, 'transformer_pdrop')
         else:
             config_rl.sequence_model_params = {'name': config_rl.sequence_model_name}
         
